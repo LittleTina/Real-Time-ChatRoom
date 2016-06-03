@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Room</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+</head>
+<body background="w1.jpg" style=" background-size: 100% 100%;">
+  <ul class="pages">
+    <ul class="chat page">
+      <div class="chatArea">
+        <div class="sidebar" style="float:right; margin-top:5%; border:5px solid #000; width:200px; height:530px"></div>
+        <div class="messages"></div>
+
+        <div class="form-inline">
+          <input class="inputMessage" placeholder="Type here..." id="inputMessage"></input>
+          <input type="image" src="like.png" style="position:fixed; bottom:0; right:0; width:60px; height:60px; border: 10px solid #000;" onclick="like()" ></input>
+        </div>
+      </div>
+
+    </ul>
+    <li class="login page">
+      <img src="welcome.png" alt="Welcome" style=" width:450px; height:158px;position: relative; top:8%; left:35%" >
+      <div class="form">
+        <h3 class="title">What's your name?</h3>
+        <span><input class="usernameInput" type="text" maxlength="14" /></span>
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
